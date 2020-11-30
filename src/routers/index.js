@@ -1,6 +1,6 @@
 import Search from "antd/lib/input/Search";
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, HashRouter, Route, Switch } from "react-router-dom";
 import Main from "../pages/layout/Main";
 import MainAdmin from "../pages/layout/MainAdmin";
 import CategoryAdmin from "../pages/view/Admin/Category/index.jsx";
@@ -25,7 +25,7 @@ const Routers = () => {
   // else(setCheck(false))
 
   return (
-    <Router>
+    <HashRouter>
       <Switch>
         <Route path="/admin/login">
           <Login />
@@ -85,7 +85,7 @@ const Routers = () => {
           </Main>
         </Route>
       </Switch>
-    </Router>
+    </HashRouter>
   );
 };
 
