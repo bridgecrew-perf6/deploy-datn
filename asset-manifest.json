@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/deploy-datn/static/css/main.5d674093.chunk.css",
+    "main.js": "/deploy-datn/static/js/main.71e293e7.chunk.js",
+    "main.js.map": "/deploy-datn/static/js/main.71e293e7.chunk.js.map",
+    "runtime-main.js": "/deploy-datn/static/js/runtime-main.00941387.js",
+    "runtime-main.js.map": "/deploy-datn/static/js/runtime-main.00941387.js.map",
+    "static/css/2.0c14234b.chunk.css": "/deploy-datn/static/css/2.0c14234b.chunk.css",
+    "static/js/2.e4f66482.chunk.js": "/deploy-datn/static/js/2.e4f66482.chunk.js",
+    "static/js/2.e4f66482.chunk.js.map": "/deploy-datn/static/js/2.e4f66482.chunk.js.map",
+    "index.html": "/deploy-datn/index.html",
+    "static/css/2.0c14234b.chunk.css.map": "/deploy-datn/static/css/2.0c14234b.chunk.css.map",
+    "static/css/main.5d674093.chunk.css.map": "/deploy-datn/static/css/main.5d674093.chunk.css.map",
+    "static/js/2.e4f66482.chunk.js.LICENSE.txt": "/deploy-datn/static/js/2.e4f66482.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.00941387.js",
+    "static/css/2.0c14234b.chunk.css",
+    "static/js/2.e4f66482.chunk.js",
+    "static/css/main.5d674093.chunk.css",
+    "static/js/main.71e293e7.chunk.js"
+  ]
+}
