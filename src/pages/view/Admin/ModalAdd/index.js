@@ -41,7 +41,7 @@ const ModalAddEmployee = ({ isModal, handleOk,category, handleCancel ,addFood}) 
     };
     return (
         <Modal
-            title="Add Food"
+            title="Thêm món ăn"
             visible={isModal}
             onOk={handleOk}
             onCancel={handleCancel}
@@ -50,16 +50,16 @@ const ModalAddEmployee = ({ isModal, handleOk,category, handleCancel ,addFood}) 
         >
             <Form  {...layout}  ref={formRef} name="nest-messages" onFinish={onFinish} >
             
-                <Form.Item name={['product', 'productName']} label="Name" rules={[{ required: true }]}>
+                <Form.Item name={['product', 'productName']} label="Tên món ăn" rules={[{ required: true }]}>
                     <Input />
                 </Form.Item>
-                <Form.Item name={['product', 'image']} label="Image"  rules={[{ required: true }]}>
+                <Form.Item name={['product', 'image']} label="Ảnh"  rules={[{ required: true }]}>
                     <Input />
                 </Form.Item>
-                <Form.Item name={['product', 'price']} label="Price"  rules={[{ required: true }]}>
+                <Form.Item name={['product', 'price']} label="Giá"  rules={[{ required: true }]}>
                     <Input type='number'/>
                 </Form.Item>
-                <Form.Item name={['product', 'categoryId']} label="Group food" rules={[{ required: true }]}>
+                <Form.Item name={['product', 'categoryId']} label="Danh mục" rules={[{ required: true }]}>
                       <Select >
                           {category.map((item,index)=>(
                                  <Select.Option value={item.id}>{item.categoryName}</Select.Option>
@@ -81,12 +81,12 @@ const ModalAddEmployee = ({ isModal, handleOk,category, handleCancel ,addFood}) 
                             {fileList.length < 5 && '+ Upload'}
                         </Upload>
                         </Form.Item> */}
-                <Form.Item name={['product', 'description']} label="Description" >
+                <Form.Item name={['product', 'description']} label="Mô tả" >
                     <Input.TextArea />
                 </Form.Item>
                 <Form.Item className="mt-3 " wrapperCol={{ ...layout.wrapperCol, offset: 4 }}>
                     <Button type="primary" htmlType="submit">
-                        Add Food
+                        Thêm món ăn
                     </Button>
                 </Form.Item>
             </Form>

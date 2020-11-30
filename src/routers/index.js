@@ -25,7 +25,7 @@ const Routers = () => {
   // else(setCheck(false))
 
   return (
-    <HashRouter>
+    <Router>
       <Switch>
         <Route path="/admin/login">
           <Login />
@@ -85,7 +85,7 @@ const Routers = () => {
           </Main>
         </Route>
       </Switch>
-    </HashRouter>
+    </Router>
   );
 };
 

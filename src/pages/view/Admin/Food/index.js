@@ -72,7 +72,7 @@ const Food = ({ foodAct, litsFoot, listGroup, categoryAct }) => {
       dataIndex: "price",
     },
     {
-      title: "Image",
+      title: "Ảnh",
       dataIndex: "image",
       render: (text) => (
         <img style={{ height: "70px", width: "80px" }} src={text} />
@@ -83,12 +83,12 @@ const Food = ({ foodAct, litsFoot, listGroup, categoryAct }) => {
       dataIndex: "description",
     },
     {
-      title: "Thể loại",
-      dataIndex: "categoryEntity",
-      render: (text) => <span>{text}</span>,
+      title: "Danh mục",
+      dataIndex: "category",
+      render: (text) => <span>{text.categoryName}</span>,
     },
     {
-      title: "Action",
+      title: "",
       dataIndex: "",
       with: "15%",
       key: "x",
@@ -113,7 +113,7 @@ const Food = ({ foodAct, litsFoot, listGroup, categoryAct }) => {
   return (
     <>
       <Row className="title-content-admin">
-        <h4 className="title-h4">Food manager</h4>
+        <h4 className="title-h4">Quản lý món ăn</h4>
       </Row>
       <Row className="site-layout-content-admin">
         <Col xs={24} lg={24}>
@@ -126,7 +126,7 @@ const Food = ({ foodAct, litsFoot, listGroup, categoryAct }) => {
             <Col span={6}></Col>
             <Col xs={24} lg={5} className="col-search-food">
               <Search
-                placeholder="input search text"
+                placeholder="Tìm món ăn"
                 size="large"
                 enterButton
               />
